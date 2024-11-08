@@ -13,7 +13,7 @@ A fast and user-friendly application, allowing fans of basketball to search and 
 
 ### Technologies
 
-- Frontend: React, Redux, Tailwind
+- Frontend: Next.js, Tailwind
 - API: BallDontLie
 
 ### Demo
