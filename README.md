@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hoop 🏀 Hub 
+#### (work in progress)
 
-## Getting Started
 
-First, run the development server:
+A fast and user-friendly application, allowing fans of basketball to search and view stats and info on their favorite NBA teams and players.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Search by Team: Quickly find your favorite NBA team and see their stats.
+- Player Lookup: Search for any NBA player currently active and access detailed statistics.
+- Detailed Stats: View essential stats for teams and players, including points, rebounds, assists, shooting percentages, and more.
+- User-Friendly Interface: Designed to deliver a clean, intuitive experience.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Frontend: React, Redux, Tailwind
+- API: BallDontLie
 
-## Learn More
+### Demo
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- View the live demo of Hoop Hub here -> [Hoop Hub](https://nba.com)
