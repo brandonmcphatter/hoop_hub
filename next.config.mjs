@@ -11,4 +11,3 @@
 }
 
 export default nextConfig;
-// upload.wikimedia.org
