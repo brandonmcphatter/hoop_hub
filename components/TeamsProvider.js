@@ -25,7 +25,7 @@ export function TeamsContextProvider({children}) {
         try {
             const response = await fetch('https://api.balldontlie.io/v1/teams/<1>',{
                 headers: {
-                        Authorization: '33525086-feac-4d44-8b23-fed50c1e9f67'
+                        Authorization: ''
                     }
                 },
             );
