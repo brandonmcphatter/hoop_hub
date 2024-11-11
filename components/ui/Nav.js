@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBasketball, faBasketballBall} from "@fortawesome/free-solid-svg-icons";
+import {faBasketballBall} from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
     return (
@@ -10,10 +10,6 @@ export default function Nav() {
                     <span className={'text-3xl'}>HOOP</span> <FontAwesomeIcon className={'w-8'} icon={faBasketballBall} style={{color: 'orange'}}/> <span
                     className={'text-3xl'}>HUB</span>
                 </Link>
-            </div>
-
-            <div>
-
             </div>
         </div>
     )
