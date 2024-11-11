@@ -1,6 +1,7 @@
-import "./globals.css";
+import "../globals.css";
 import Nav from "@/components/ui/Nav";
 import {TeamsContextProvider} from "@/components/TeamsProvider";
+import SideBar from "@/components/ui/SideBar";
 
 export const metadata = {
     title: "Hoop Hub",
@@ -9,17 +10,16 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
+
         <TeamsContextProvider>
-            <body>
-            <Nav/>
-            {children}
+            <main className={''}>
+            <div className={'flex'}>
+                <SideBar />
+                {children}
+            </div>
             {/*<Footer />*/}
-            </body>
+            </main>
         </TeamsContextProvider>
-        </html>
+
     );
 }
-
-
-
