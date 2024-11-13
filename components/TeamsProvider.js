@@ -10,7 +10,8 @@ const TeamsContext = createContext();
 // provider
 export function TeamsContextProvider({children}) {
     const [isLoading, setIsLoading] = useState(false);
-    const [teamKey, setTeamKey] = useState(0); // index of current team
+    const [activeTeam, setActiveTeam] = useState(0);
+    const [teamKey, setTeamKey] = useState(activeTeam); // index of current team
     const [players, setPlayers] = useState([]); // all players
     const currentTeam = nbaTeams[teamKey]; // team object
 
@@ -24,32 +25,12 @@ export function TeamsContextProvider({children}) {
 
     const goToTeam = (x)=> {
         redirect('/teams');
-        setTeamKey(x);
+        setActiveTeam(x);
     }
 
     // fetch all players
 
-    useEffect(()=>{
-        const fetchPlayers = async () => {
-            try {
-                console.log('loading');
-                const response = await fetch(ballDontLie+`players?team_ids[]=${teamKey+1}`,{
-                        headers: {Authorization: API_KEY}
-                    },
-                );
-                const data = await response.json();
-                setPlayers(data.data);
-                console.log('done');
-            } catch (error) {
-                console.error('Error fetching player data:', error);
-            } finally {
 
-            }
-        };
-        fetchPlayers();
-
-    }, [teamKey])
-    console.log(players)
 
     return (
         <TeamsContext.Provider value={{
